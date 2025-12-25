@@ -32,7 +32,8 @@ h2 {
 }
 
 .about-text {
-    max-width: 65%;
+    width: 60%;
+    height: 100vh;
 }
 
 .services {
@@ -67,10 +68,16 @@ h2 {
 
 .choose {
     display: flex;
+    margin-bottom: 110px;
 }
 
 .choose-img {
-    margin-right: 200px;
+    position: absolute;
+    right: 20px;
+}
+
+.chos {
+    margin-left: 100px;
 }
 
 .chos p {
@@ -126,4 +133,8 @@ form textarea {
 
 textarea {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#ct {
+    width: 60%;
 }
