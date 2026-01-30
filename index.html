@@ -12,74 +12,107 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <ul class="normal-bar">
+            <li>
+                <img class="logo" src="logo.png" alt="logo">
+                <h2 class="heading">Shikha Medical Store</h2>
+            </li>
+            <li class="hidden"><a href="#home">Home</a></li>
+            <li class="hidden"><a href="#about">About</a></li>
+            <li class="hidden"><a href="#home">Services</a></li>
+            <li class="hidden"><a href="#home">Contact Us</a></li>
+        </ul>
+    </nav>
 
-    <header class="hero">
-        <h1>Shikha Medical Store</h1>
-    </header>
-
-    <section class="about">
-        <h2>About <span>Us</span></h2>
-        <p class="about-text">
-            Shikha Medical Store is a trusted and customer-focused pharmacy dedicated to serving the healthcare needs of
-            our local
-            community. We understand how important timely and reliable medical support is, which is why we ensure the
-            availability
-            of genuine medicines and essential healthcare products at all times.
-        </p>
-    </section>
-
-    <section class="services">
-        <div class="service-img">
-            <img src="services.png">
+    <div class="hero">
+        <img class="store" src="store.png" alt="store">
+        <div class="quote">
+            <p class="main-quote">YOUR <span>TRUSTED</span> NEIGHBORHOOD PHARMACY</p>
+            <p class="small-quote">Medicines, Health Products & More!</p>
+            <button>EXPLORE SERVICES</button>
         </div>
-        <div class="serv">
-            <h2>Our <span>Services</span></h2>
-            <p>1. Pet shop</p>
-            <p>2. Wholesale</p>
-            <p>3. Retail</p>
-            <p>4. Veterinary Medicine</p>
-        </div>
-    </section>
+    </div>
 
-    <section class="choose">
-        <div class="chos">
-            <h2>Why Choose <span>Us</span></h2>
-            <p>1. Genuine Medicines</p>
-            <p>2. Affordable Prices</p>
-            <p>3. Friendly Staff</p>
-            <p>4. Trusted by Customers</p>
-        </div>
-        <div class="choose-img">
-            <img src="choose.png">
-        </div>
-    </section>
-
-    <section class="contact">
-        <div class="info">
-            <h2>Contact <span>Us</span></h2>
-            <p id="ct"><i class="fa-slab-press fa-regular fa-address-card" style="color: #0ef;"></i> shikha medical
-                store, ward
-                no.17, jawahar nagar. post , seorahi, district kushinagar, uttar pradesh</p>
-            <p><i class="fa-duotone fa-solid fa-phone" style="color: #0ef;"></i> +91 9936857965</p>
-            <p><i class="fa-regular fa-clock" style="color: #0ef;"></i> 9 AM to 10 PM</p>
+    <div class="about">
+        <div class="details">
+            <h1 class="Welcome-text">WELCOME TO SHIKHA MEDICAL STORE</h1>
+            <p class="small-detail">Your Health & Wellness Partner.</p>
+            <button>EXPLORE SERVICES</button>
         </div>
 
+        <div class="image">
+            <img class="store-image" src="store.png" alt="store">
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="main-text">WELCOME TO SHIKHA MEDICAL STORE</div>
+        <div class="small-text">Your Health & Wellness Partner.</div>
+
+        <div class="content-box">
+            <div class="box1 box">
+                <img class="img" src="medicines.jpg" alt="image">
+                <p class="service-text">MEDICINES</p>
+            </div>
+            <div class="box2 box">
+                <img class="img" src="health-prod.jpg" alt="image">
+                <p class="service-text">HEALTH PRODUCTS</p>
+            </div>
+            <div class="box3 box">
+                <img class="img" src="report.png" alt="image">
+                <p class="service-text">DOCTOR SUPPORT</p>
+            </div>
+            <div class="box4 box">
+                <img class="img" src="medical-cons.jpg" alt="image">
+                <p class="service-text">MEDICAL CONSULATION</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Let's work together</h4>
+            <p>
+                If you face any problem or issue in our website.<br> So, Drop Us a Line.
+            </p>
+            <div class="contact-list">
+                <li>
+                    <i class="fa-solid fa-paper-plane" style="color: #24f6b0"></i>
+                    shivanshkumargupta74@gmail.com
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone" style="color: #22f0ab"></i>
+                    +91 9415826300
+                </li>
+            </div>
+            <div class="contact-icons">
+                <a class="logo1" href="https://www.facebook.com/profile.php?id=61585406134560" target="_main"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a class="logo1" href="https://x.com/darkie_75coder" target="_main"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+                <a class="logo1" href="https://www.instagram.com/darkie_75coder/" target="_main"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a class="logo1" href="https://www.linkedin.com/in/shivansh-kumar-gupta-4146b73a1/" target="_main"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
         <div class="contact-form">
             <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="2d14e613-99a0-4712-812e-cc4881bfff5f">
+                <input type="hidden" name="access_key" value="4093bdd7-0022-4437-8465-72410bdfba2c">
                 <input type="" placeholder="Enter your Name" name="name" required>
                 <input type="email" placeholder="Enter your Email" name="email" required>
 
                 <input type="" placeholder="Subject" name="subject" required>
                 <textarea name="message" id="" cols="40" rows="10" placeholder="Enter your Message" required></textarea>
-                <div class="h-captcha" data-captcha="true"></div>
                 <input type="submit" value="Submit" class="send">
+
             </form>
         </div>
-
     </section>
-    <script src="https://web3forms.com/client/script.js" async defer></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
-
