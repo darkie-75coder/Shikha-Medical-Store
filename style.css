@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
     user-select: none;
+    scroll-behavior: smooth;
 }
 
 body {
+    min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -18,6 +20,56 @@ body {
     position: fixed;
     width: 100%;
     z-index: 999;
+}
+
+.hidon {
+    display: none;
+}
+
+.sidebar {
+    background: #1f5f4a8c;
+    backdrop-filter: blur(20px);
+    height: 100vh;
+    width: 200px;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.sidebar li {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.sidebar li:first-child {
+    margin-top: 20px;
+}
+
+.sidebar li:hover {
+    background: #1f5f4a;
+    text-transform: none;
+}
+
+.sidebar li a:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 1250px) {
+    .hidon {
+        display: block;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        display: block;
+        width: 100%;
+    }
 }
 
 .heading {
@@ -69,12 +121,10 @@ ul li:first-child {
 }
 
 .quote {
-    background: transparent;
+    background: #1f5f4a86;
     color: #fff;
-    padding: 20px;
-    padding-left: 50px;
-    width: 25%;
-    padding-right: 100px;
+    padding: 25px;
+    width: 30%;
     position: absolute;
     top: 40%;
     left: 2%;
@@ -116,6 +166,7 @@ button {
 
 .about {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 45px;
@@ -159,6 +210,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 200px;
 }
 
 .small-text {
