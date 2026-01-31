@@ -13,6 +13,19 @@
 
 <body>
     <nav class="navbar">
+        <ul class="sidebar">
+            <li onclick="hidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                    fill="#e3e3e3">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
         <ul class="normal-bar">
             <li>
                 <img class="logo" src="logo.png" alt="logo">
@@ -20,12 +33,16 @@
             </li>
             <li class="hidden"><a href="#home">Home</a></li>
             <li class="hidden"><a href="#about">About</a></li>
-            <li class="hidden"><a href="#home">Services</a></li>
-            <li class="hidden"><a href="#home">Contact Us</a></li>
+            <li class="hidden"><a href="#services">Services</a></li>
+            <li class="hidden"><a href="#contact">Contact Us</a></li>
+            <li class="hidon"><svg onclick="showsidebar()" xmlns="http://www.w3.org/2000/svg" height="24px"
+                    viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg></a></li>
         </ul>
     </nav>
 
-    <div class="hero">
+    <div class="hero" id="home">
         <img class="store" src="store.png" alt="store">
         <div class="quote">
             <p class="main-quote">YOUR <span>TRUSTED</span> NEIGHBORHOOD PHARMACY</p>
@@ -34,7 +51,7 @@
         </div>
     </div>
 
-    <div class="about">
+    <div class="about" id="about">
         <div class="details">
             <h1 class="Welcome-text">WELCOME TO SHIKHA MEDICAL STORE</h1>
             <p class="small-detail">Your Health & Wellness Partner.</p>
@@ -46,7 +63,7 @@
         </div>
     </div>
 
-    <div class="services">
+    <div class="services" id="services">
         <div class="main-text">WELCOME TO SHIKHA MEDICAL STORE</div>
         <div class="small-text">Your Health & Wellness Partner.</div>
 
