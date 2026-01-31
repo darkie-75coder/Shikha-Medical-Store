@@ -40,6 +40,7 @@ body {
 .sidebar li {
     margin-bottom: 50px;
     width: 100%;
+    height: 50px;
 }
 
 .sidebar li:first-child {
@@ -358,3 +359,4 @@ form textarea {
     box-shadow: 0 0 5px #1f5f4a, 0 0 25px #1f5f4a, 0 0 50px #1f5f4a, 0 0 100px #1f5f4a,
         0 0 200px #1f5f4a;
 }
+
